@@ -1,0 +1,27 @@
+<!-- Self learning Program wrt React Styling: https://www.kirupa.com/react/styling_in_react.htm  -->
+<script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"> </script> 
+<script crossdomain src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script> 
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
+<body>
+<div id="myid"></div>
+
+<script type="text/babel">
+class Example extends React.Component {
+  render() {
+    const mystyle = {
+      color: "white",
+      backgroundColor: "blue",
+      padding: "10px",
+      fontFamily: "Calibri"
+    };
+    return (
+      <div>
+      <h1 style={mystyle}>Hello Class!</h1>
+      <p>I dont have any style:-(</p>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<Example/>, document.getElementById('myid'));
+</script>

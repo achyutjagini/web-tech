@@ -1,0 +1,29 @@
+<script>
+function randomDate(start, end) {
+return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+  }
+  
+  x=randomDate(new Date(2021,0,0),new Date(2021,12,1));
+  console.log(x);
+  //console.log(randomDate(new Date(2021,0,0),new Date(2021,12,1)));
+  function myfunc()
+    {
+    y=document.getElementById(myid).innerHTML;
+    if(y==x)
+       console.log(match);
+    else 
+    console.log("no match");
+    }
+</script>
+<input type="date" id="myid">
+<input type="submit" onclick="myfunc()">
+<script>
+    function myfunc()
+    {
+    y=document.getElementById(myid).innertext;
+    if(y==x)
+       console.log(match);
+    else 
+    console.log("no match");
+    }
+</script>

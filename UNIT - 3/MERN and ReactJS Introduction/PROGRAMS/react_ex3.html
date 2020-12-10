@@ -1,0 +1,19 @@
+<script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"> </script> 
+<script crossdomain src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script> 
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
+
+<div id="mydiv"></div>
+
+<script type="text/babel">
+class Student extends React.Component {
+  render() {
+    return <h2>I belong to {this.props.section}!</h2>;
+  }
+}
+ReactDOM.render(<div>
+				<Student section="A section"/>
+				<Student section="B section"/>
+				<Student section="E section"/>
+				</div>,
+document.getElementById("mydiv"));
+</script>

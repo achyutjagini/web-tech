@@ -1,0 +1,45 @@
+
+
+<script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"> </script> 
+<script crossdomain src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script> 
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
+
+<body>
+<div id="myid"></div>
+<script type="text/babel">
+//put style inside render
+class Card extends React.Component
+{
+constructor(props)
+{
+    super(props);
+    this.state={seconds:0
+    
+    };
+   
+}
+
+render()
+{
+    var letterstyle=
+{
+    color:"green",
+ 
+}
+    return(<div>
+        <p key="1" style={letterstyle}>abcd</p>
+        <p key="2">defg</p>
+        <h1>{this.state.seconds}</h1>
+        </div>
+        )
+}
+
+
+
+}
+
+ReactDOM.render(<Card/>,document.getElementById('myid'));
+
+
+
+</script>

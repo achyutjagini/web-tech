@@ -1,0 +1,42 @@
+<html>
+<body>
+  <button type="button" onclick="load()">Change Content</button>
+  <p id="demo"></p>
+<script>
+function load()
+{
+var xhr=new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {//this-xhr
+     //document.getElementById("demo").innerHTML="abcd";
+      
+      myFunction(this);//this-xhr.responseText
+    }
+}
+
+xhr.open("GET", "files/student.json", true);//prepare request
+xhr.send();//send request
+}
+
+function myFunction(jso)
+{
+console.log(45);
+
+var jsondoc=jso.responseText;//xhr.responseText
+
+x=JSON.parse(jsondoc);
+console.log(x);
+
+console.log(x.marks);
+var sum=0;
+for(i=0;i<=x.marks.length;i++)
+{
+  sum=sum+i;
+}
+avg=sum/5;
+console.log(avg);
+}
+</script>
+
+</body>
+</html>
