@@ -1,0 +1,3 @@
+SELF LEARNING COMPONENT - TRY THE NODEJS PROGRAM IN THE BELOW MENTIONED LINK
+
+https://stackabuse.com/reading-and-writing-csv-files-with-node-js/ 
